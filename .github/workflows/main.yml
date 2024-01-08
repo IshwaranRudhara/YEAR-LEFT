@@ -4,7 +4,8 @@ on:
   push:
     branches: [master]
   schedule:
-    - cron: "0 */6 * * *"
+    # 30 mins every hour
+    - cron: "30 * * * *"
   workflow_dispatch:
 
 jobs:
